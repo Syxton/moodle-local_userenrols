@@ -29,13 +29,10 @@
 
     defined('MOODLE_INTERNAL') || die();
 
-    require_once("{$CFG->dirroot}/lib/accesslib.php");
-    require_once("{$CFG->dirroot}/lib/enrollib.php");
-    require_once("{$CFG->dirroot}/lib/grouplib.php");
-    require_once("{$CFG->dirroot}/lib/navigationlib.php");
-    require_once("{$CFG->dirroot}/group/lib.php");
-
-
+    require_once($CFG->libdir . "/accesslib.php");
+    require_once($CFG->libdir . "/enrollib.php");
+    require_once($CFG->libdir . "/grouplib.php");
+    require_once($CFG->dirroot . "/group/lib.php");
 
     /**
      * Hook to insert a link in settings navigation menu block
